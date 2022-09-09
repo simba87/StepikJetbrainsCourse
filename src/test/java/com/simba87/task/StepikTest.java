@@ -36,4 +36,11 @@ public class StepikTest {
         Task task = new LeetCode_9_PalindromeNumber();
         assertLinesMatch(task.getExpected(), task.execute(), "Results are not as expected");
     }
+
+    @Test
+    @DisplayName("LeetCode. 13. Roman to Integer")
+    void leetCode_13_RomanToInteger_test() {
+        Task task = new LeetCode_13_RomanToInteger();
+        assertLinesMatch(task.getExpected(), task.execute(), "Results are not as expected");
+    }
 }
