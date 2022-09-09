@@ -11,6 +11,8 @@ public class StepikTest {
     @Test
     @DisplayName("Dummy test")
     void dummyTest() {
+        System.out.println(7/2);
+        System.out.println(7%2);
         assertEquals(1, 1, "failed");
     }
 
@@ -25,6 +27,13 @@ public class StepikTest {
     @DisplayName("LeetCode. 1. Two Sum")
     void leetCode_1_TwoSum_test() {
         Task task = new LeetCode_1_TwoSum();
+        assertLinesMatch(task.getExpected(), task.execute(), "Results are not as expected");
+    }
+
+    @Test
+    @DisplayName("LeetCode. 9. Palindrome Number")
+    void leetCode_1_PalindromeNumber_test() {
+        Task task = new LeetCode_9_PalindromeNumber();
         assertLinesMatch(task.getExpected(), task.execute(), "Results are not as expected");
     }
 }
