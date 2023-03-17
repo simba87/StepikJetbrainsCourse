@@ -19,7 +19,7 @@ public class StepikTest {
     @Test
     @DisplayName("1.6 Digital Watches")
     void digitalWatches_1_6_test() {
-        Task task = new DigitalWatches_1_6();
+        Task task = new Stepik_1_6_DigitalWatches();
         assertTrue(true);
     }
 
