@@ -16,11 +16,18 @@ public class StepikTest {
         assertEquals(1, 1, "failed");
     }
 
+//    @Test
+//    @DisplayName("1.6 Digital Watches")
+//    void digitalWatches_1_6_test() {
+//        Task task = new Stepik_1_6_DigitalWatches();
+//        assertTrue(true);
+//    }
+
     @Test
-    @DisplayName("1.6 Digital Watches")
-    void digitalWatches_1_6_test() {
-        Task task = new Stepik_1_6_DigitalWatches();
-        assertTrue(true);
+    @DisplayName("CodeRun. Largest Product Three Numbers")
+    void codeRun_LargestProductThreeNumbers_test() {
+        Task task = new CodeRunLargestProductThreeNumbers();
+        assertLinesMatch(task.getExpected(), task.execute(), "Results are not as expected");
     }
 
     @Test

@@ -10,7 +10,7 @@ public class Stepik_1_114_RunLengthEncoding {
 
         char c = input.charAt(0);
 
-        input.chars()
+//        input.chars()
 
         System.out.println(input.charAt(2));
     }
